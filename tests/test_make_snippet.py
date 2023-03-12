@@ -9,9 +9,8 @@ def test_2(): # check if adding .split() returns words split into a list
 def test_3():  # check len() returns True with string of 5 or less words
     assert make_snippet3("one two three four") == True
 
-# def test_3a():  # check len() returns True with string of 6 or more words 
-#     assert make_snippet3("one two three four five six") == False
-### (fails, needs else/False statement)
+def test_3a():  # check len() returns True with string of 6 or more words 
+    assert make_snippet3("one two three four five six") == None 
 
 def test_4(): # check len() returns False with string of more than 5 words
     assert make_snippet4("one two three four five six") == False
